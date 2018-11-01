@@ -1,0 +1,119 @@
+@-webkit-keyframes backgroundFlow {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-1692px, 0, 0);
+            transform: translate3d(-1692px, 0, 0);
+  }
+}
+
+@keyframes backgroundFlow {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-1692px, 0, 0);
+            transform: translate3d(-1692px, 0, 0);
+  }
+}
+
+section {
+  overflow: hidden;
+}
+
+#world {
+  height: 100vh;
+  width: 4572px;
+  -webkit-animation: slide 60s linear infinite;
+          animation: slide 60s linear infinite;
+  background-image: url("../background.gif");
+  background-repeat: repeat-x;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-2286px, 0, 0);
+            transform: translate3d(-2286px, 0, 0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-2286px, 0, 0);
+            transform: translate3d(-2286px, 0, 0);
+  }
+}
+
+button {
+  display: none;
+  font-size: 32px;
+  padding: 10px;
+  border: 0;
+  width: 50px;
+}
+
+#coords {
+  color: white;
+}
+
+.backwards {
+  -webkit-transform: scale(2) scaleX(-1) !important;
+          transform: scale(2) scaleX(-1) !important;
+}
+
+#root {
+  position: fixed;
+  margin-left: 50%;
+  top: 470px;
+  -webkit-transform: scale(2) scaleX(1);
+          transform: scale(2) scaleX(1);
+  height: 55px;
+  width: 84.4px;
+  background: url(../sprit.png) 0px 0px;
+  -webkit-animation: runForward 600ms infinite steps(1);
+          animation: runForward 600ms infinite steps(1);
+  -webkit-transform-origin: 25%;
+          transform-origin: 25%;
+}
+
+@-webkit-keyframes runForward {
+  0% {
+    background: url(../sprit.png) 0px -90px;
+  }
+  25% {
+    background: url(../sprit.png) -96px -90px;
+  }
+  50% {
+    background: url(../sprit.png) -192px -90px;
+  }
+  75% {
+    background: url(../sprit.png) -96px -90px;
+  }
+}
+
+@keyframes runForward {
+  0% {
+    background: url(../sprit.png) 0px -90px;
+  }
+  25% {
+    background: url(../sprit.png) -96px -90px;
+  }
+  50% {
+    background: url(../sprit.png) -192px -90px;
+  }
+  75% {
+    background: url(../sprit.png) -96px -90px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
